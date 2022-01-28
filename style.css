@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgba(109, 106, 106, 0.178);
+}
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Italianno', cursive;
+font-family: 'Satisfy', cursive; */
+
+/* start menu bar and baner design */
+
+#header-nav{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(media-s/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 180px;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li {
+   list-style: none;
+   display: inline-block;
+   padding: 5px 10px;
+   margin: 5px;
+   position: relative;
+   font-family: 'Abril Fatface', cursive;
+   transition: 0.4s;
+}
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.nav-link ul li:hover{
+    background-color: rgba(128, 128, 128, 0.205);
+    border-radius: 5px;
+    transform: scale(1.3);
+}
+/* text box start here */
+.text-box{
+    width: 90%;
+    color: rgba(255, 255, 255, 0.863);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 3rem;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.text-box p{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.baner-btn{
+     display: inline-block;
+     color: #fff;
+     text-decoration: none;
+     border: 1px solid #fff;
+     padding: 7px 18px;
+     border-radius: 3px;
+     font-size: 13px;
+     font-weight: bolder;
+     position: relative;
+     background: transparent;
+     cursor: pointer;
+}
+.baner-btn:hover{
+    background-color: rgb(248, 69, 4);
+    border:1px solid rgb(248, 69, 4);
+    transition: 1s;
+    
+}
+nav .fas{
+    display: none;
+}
+/* menu bar and end design */
+
+/* course design start here */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.course p{
+    font-size: 0.8rem;
+    color: rgb(109, 106, 106);
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+} 
+.course-col{
+    flex-basis: 31%;
+    background-color: #f3d2d267;
+    padding: 15px 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+.course-col p{
+    text-align: justify;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* course design end here */
+
+/* our campas start here */
+
+.campas{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+}
+.campas h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.campas p{
+    font-size: 0.8rem;
+    color: rgb(109, 106, 106);
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+    
+}
+.campas-colam{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin: 5px;
+}
+.campas-colam img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.layer:hover{
+    background-color: rgba(241, 50, 16, 0.774);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: rgb(250, 246, 246);
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    opacity: 1;
+    bottom: 49%;
+   
+}
+.campas-row{
+    display: flex;
+    
+}
+/* our campas end here */
+
+/* Facilities start */
+.facilities{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+.faclities-row{
+    display: flex;
+    flex-direction: left;
+}
+.faclitise-col{
+    flex-basis: 31%;
+    margin-bottom: 20%;
+    text-align: left;
+    margin: 10px;
+}
+.facilities h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.facilities p{
+    font-size: 0.8rem;
+    color: rgb(109, 106, 106);
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+.faclitise-col img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.faclitise-col h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.faclitise-col p{
+
+    padding: 0;
+    text-align: justify;
+}
+/* Facilities end */
+
+/* testmonial start here */
+.test-monial{
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+    
+}
+.test-monial h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.test-monial p{
+    font-size: 0.8rem;
+    color: rgb(109, 106, 106);
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+.test-monial-clom{
+    display: flex;
+    background-color: rgba(248, 53, 19, 0.212);
+    flex-basis: 41%;
+    margin-bottom: 5%;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+.test-monial-row{
+    margin-top: 30px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: left;
+    
+}
+.test-monial-clom div{
+    text-align: left;
+    padding: 5px;
+}
+.test-monial-clom img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.test-monial-clom p{
+    text-align: left;
+    padding-top: 10px;
+    
+}
+.test-monial-clom h3{
+    text-align: left;
+    padding-left: 7px;
+}
+.test-monial-clom i{
+   color: rgb(241, 118, 10);
+   margin-left: 5px;
+   margin-top: 5px;
+    
+}
+/* testmonial end here */
+
+/* call to action */
+.cta{
+    width: 80%;
+    padding: 100px 0;
+    text-align: center;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(media-s/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.cta h1{
+    color: rgb(245, 240, 231);
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+/* call to action */
+
+/* -----footer start-------- */
+
+.footer{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgba(109, 106, 106, 0.637);
+}
+.footer h4{
+    font-size: 1.4rem;
+}
+.footer p{
+    font-size: 0.8rem;
+    color: rgb(65, 57, 57);
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+.icon .fab{
+    color: rgb(8, 8, 8);
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+/* -----footer End-------- */
+
+/* responsive desine start here */
+
+@media (max-width: 700px) {
+
+    .text-box h1{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    .nav-link ul li:hover{
+        background-color: rgba(128, 128, 128, 0.712);
+        border-radius: 5px;
+        transform: none;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link{
+        position: fixed;
+        background-color:rgba(206, 71, 22, 0.979);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        text-align: left;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        padding: 15px;
+        font-size: 2.3rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav-link ul{
+        padding: 25px;
+
+    }
+    /* cuorce start here */
+    .row{
+        flex-direction: column;
+    }
+    /* cuorce end here */
+
+    /* campas start here */
+    .campas-row{
+        flex-direction: column;
+    }
+    
+    /* campas end here */
+
+    /* Facilities */
+    .faclities-row{
+        flex-direction: column;
+    }
+    /* Facilities end*/
+
+    /* testiminol */
+    .test-monial-row{
+        flex-direction: column;
+    }
+    .test-monial-clom{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .test-monial-clom div{
+        margin: 0;
+        padding: 0;
+    }
+    .test-monial-clom img{
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    /* testiminol */
+
+    /* call to action */
+    .cta h1{
+       margin-bottom: 50px;
+        font-size: 1.5rem;
+       
+    }
+    /* call to action */
+}
+
+/* responsive desine end here */
+
+
+
+/* ------About page start here------ */
+
+#about-nav{
+
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(media-s/background.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    
+}
+.about{
+    margin-top: 50px;
+}
+.about h1{
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 9px;
+}
+.about p{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-colm{
+    flex-basis: 48%;
+    padding: 30px 5px;
+}
+.about-colm img{
+    width: 100%;
+}
+.about-row{
+    display: flex;
+}
+.about-colm h1{
+    font-size: 1.8rem;
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.about-colm p{
+    padding: 15px 0 25px;
+    font-size: 0.8rem;
+    color: rgb(65, 57, 57);
+    font-weight: 300;
+    line-height: 20px;
+    
+}
+.ab-bt{
+    border: 1px solid rgb(187, 108, 108);
+    color: rgb(58, 35, 35);
+}
+
+@media (max-width:600px) {
+
+    .about-row{
+       flex-direction: column;
+    }
+    
+}
+
+/* ------About page End here------ */
+
+/* ------Blog page start here------ */
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+    padding-bottom: 50px ;
+}
+.blog h1{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+.blog{
+    bottom: 300px;
+}
+.blog p{
+    font-size: 1.5rem;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    color: #222;
+    padding: 30px 0;
+    font-weight: 700;
+}
+.blog-left p{
+    padding: 0;
+    font-size: 0.8rem;
+    color: rgb(124, 118, 118);
+    font-weight: 300;
+    line-height: 20px;
+    text-align: justify;
+    
+}
+.blog-right{
+    flex-basis: 32%;
+    margin: 0;
+    padding: 0;
+}
+.blog-right h3{
+    background-color: tomato;
+    text-align: center;
+    color: wheat;
+    padding: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    
+}
+.blog-right div{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    
+}
+.style-hr{
+    margin-top: 50px;
+    border: 2px dotted gray;
+    border-bottom: none;
+    
+}
+.blog-row{
+    display: flex;
+    justify-content: space-between;
+}
+.coment-box{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    /* background-color: rgba(216, 191, 216, 0.445); */
+}
+.coment-box h3{
+    text-align: left;
+}
+.coment-from input,.coment-from textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    background-color: rgb(206, 198, 198);
+    
+}
+.coment-from{
+    text-align: left;
+}
+
+.coment-from button{
+    margin: 10px 0;
+}
+.submit-btn{
+    border: 1px solid tomato;
+    
+    background-color: rgb(150, 137, 137);
+}
+
+@media (max-width:600px) {
+    .blog h1{
+        font-size: 1rem;
+        margin-top: 50px ;
+    }
+    .blog p{
+        font-size: 0.9rem;
+    }
+    .blog-row{
+        flex-direction: column;
+    }
+}
+
+/* ------Blog page end here------ */
+
+
+/* ------contact us start here-------- */
+
+.location{
+    width: 90%;
+    margin: auto;
+    padding: 70px 0;
+}
+.location iframe{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-colam{
+    flex-basis: 48%;
+    margin-bottom: 40px;
+}
+.contact-colam div{
+    display: flex;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.contact-colam span{
+    text-align: left;
+    padding-left: 5px;
+}
+.contact-colam div .fas{
+    font-size: 1.2rem;
+    color: rgba(255, 0, 0, 0.849);
+}
+.contact-colam div p{
+    font-size: 0.7rem;
+    color: #555;
+ 
+}
+.contact-colam div h5{
+    color: #555;
+    font-weight: 700;
+}
+.contact-colam input,.contact-colam textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-btn{
+
+    border: 1px solid rgb(77, 47, 47);
+    color: black;
+    transition: 0.3s;
+}
+.contact-btn:hover{
+
+    border: 1px solid tomato;
+    color: wheat;
+}
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width:600px) {
+    .contact-row{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+/* ------contact us end here-------- */
